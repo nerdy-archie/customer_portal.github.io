@@ -1,0 +1,203 @@
+/*body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+
+    
+ background-color: #000000;
+background-image: url(log.jpg);
+-webkit-background-size:cover;
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
+.wrap{
+    width: 400px;
+    height: 420px;
+    color:#000;
+    top: 40%;
+    left:60%;
+    padding: 70px 30px;
+position: absolute;
+transform: translate(-50%,-50%);
+text-align: center;
+border-color: #000;
+box-sizing: border-box;
+box-shadow: 8px 8px 50px #000;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 40px;
+    background: -webkit-linear-gradient(#000,#eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    color: aliceblue;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 10px #150F0E;
+}
+
+    
+.wrap input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.wrap input[type=text], .wrap input[type=password]{
+border: none;
+border-bottom: 1px solid #ddd;
+outline: none;
+height: 30px;
+font-size: 16px;
+background: transparent;
+height: 30px;
+font-size: 20px;
+opacity: 1;
+color: #ccc;
+
+}
+.wrap input[type = "sumbit"]{
+    border: none;
+    outline: none;
+    height:20px;
+    width: 50px;
+    background:whitesmoke;
+    color:#000;
+    font-size: 14px;
+    font-weight: bold; 
+
+}
+.wrap input[type = "sumbit"]:hover{
+    cursor: pointer;
+    
+}
+.wrap a{
+    font-size: 14px;
+    text-decoration: none;
+    color:#fff;
+    opacity:0.8;
+     
+}
+.wrap a:hover{
+    color:#fff;
+    opacity:1;
+     
+}
+.bottom-button{
+    color: #fff;
+}
+.bottom-button input{
+    width: 20%;
+    float: left;
+}
+.bottom-button input[type = "checkbox"]
+{
+    float: left;
+}
+.bottom-button a{
+    float: right;
+}
+.fa:hover {
+    opacity: 0.7;
+  }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  */
+  *{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    width:100%;
+    height:100vh;
+    background-image:url(75886.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+nav{
+    width: 100%;
+    height:80px;
+    color: grey;
+    line-height:80px ;
+
+
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color:gray;
+    padding:30px;
+    
+}
+.link::after{
+    content:'';
+    display: block;
+    width:0;
+    height:2px;
+    background:grey;
+    transition: width .3s;
+}
+ li a:hover{
+    text-decoration: none;
+    color:lightgrey;
+}
+.link:hover::after {
+  
+    width:100%;
+    color: grey;
+    transition: width .3s;
+}
+  #main{
+     /* background-color: lightgray;*/
+     
+     
+      color: dimgrey;
+      background-color: #000000;
+      background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    
+      /*background: #000000;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #434343, #000000);*/
+
+  }
+  #loginbox{
+    
+     margin-left: auto;
+     margin-right: auto;
+      margin-top: 100px;
+      background-color:#0005;
+
+  }
+  #forgetpas{
+      display: flex;
+  }
+  #loginbtn{
+      margin-left: 90px;
+      margin-top: 30px;
+      width: 180px;
+      
+  }
+  
+  #mynav{
+      color:white;
+      height: 70px;
+  }
+  

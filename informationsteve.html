@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/style-sheet1.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class="link" href="index.html">Login</a></li>
+            <li><a class="link" href="informationsteve.html">Send Information</a></li>
+            <li><a class="link" href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- <div class="info-section">
+        <h1>Information</h1>
+        <p>
+            Add about yourself
+        </p>
+        <div class="border">
+            <form class="info-form">
+                <input  class="contact-form-text" type="text" placeholder="Your Name" required>
+                <input class="contact-form-text"  type="text" placeholder="Last Name" required>
+                <input class="contact-form-text"  type="Email" placeholder="Email" required>
+                <input class="contact-form-text"  type="tel" placeholder="Mobile  Number" required>
+                <textarea class="contact-form-text" name="Address" placeholder="Address" rows="5" required></textarea>
+                <input class="contact-form-text" type="text" placeholder="District" required>
+                <input class="contact-form-text" type="text" placeholder="State" required>
+                <input class="contact-form-text" type="text" id="Pincode" name="Pincode" placeholder="Pincode" pattern="[1-9]{6}" required>
+
+            </form>
+            <button type="submit" form="form" value="Submit" align="center">Submit</button>
+        </div>
+
+    </div>
+ -->
+    <div class="padding container d-flex justify-content-center">
+        <div class="col-md-10 col-md-offset-1">
+            <form class="signup-form" id="queryForm">
+                <h2 class="text-center">Query Submission</h2>
+                <hr>
+                <input id="FirstName" type="text" class="form-control form-group" placeholder="First Name" required="required">
+                <input id="LastName" type="text" class="form-control form-group" placeholder="Last Name" required="required">
+                <input id="FromEmail" type="email" class="form-control form-group" placeholder="From Email " required="required">
+                <input id="ToEmail" type="email" class="form-control form-group" placeholder="To Email " required="required">
+                <input id="MobileNumber" type="tel" class="form-control form-group" placeholder="Mobile Number" required="required">
+                <input id="Query" class="form-control form-group" type="text" placeholder="Query" required>
+
+                <button type="submit" class="btn btn-blue form-group text-center btn-block">Submit Query</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAo8sWt2WAEOR-KBNHklv8LpUveY1wszfc",
+        authDomain: "internshipsite-26383.firebaseapp.com",
+        databaseURL: "https://internshipsite-26383.firebaseio.com",
+        projectId: "internshipsite-26383",
+        storageBucket: "internshipsite-26383.appspot.com",
+        messagingSenderId: "457298370787",
+        appId: "1:457298370787:web:9fe5b15d65d422204ea5d6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+
+    // db.settings({
+    //     timestampsInSnapshots: true
+    // });
+</script>
+<script src="scripts/db2.js"></script>
+
+</html>

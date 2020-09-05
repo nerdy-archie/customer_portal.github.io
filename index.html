@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Log-inpage</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="main">
+    <!--<div class="wrap">
+        <h1>LOGIN</h1>
+        <form action=""><input type="text" name="uname" placeholder="Username">
+            <input type="password" name="pass" placeholder="Password">
+            <input type="sumbit" name="" value="LOGIN">
+        </form>
+        <div class="bottom-button">
+            <input type="checkbox" name="remember" checked="checked">Remember  me
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="socials">
+            <a href="#">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </div>
+    </div>-->
+    <nav>
+        <ul>
+            <li><a class="link" href="index.html">Login</a></li>
+            <li><a class="link" href="informationsteve.html">Send Information</a></li>
+            <li><a class="link" href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container ">
+        <div class="card" id="loginbox" style="width: 25rem;">
+            <div class="card-body">
+                <h5 class="card-title" style=" color : dimgrey;margin-left: 140px;">LOGIN</h5>
+                <p style="margin-left: 40px;">enter user name and password to login</p>
+
+                <form id="signinForm">
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" style="background-color:  black; border: none;" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+
+                    </div>
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" style="background-color:  black; border: none;" id="password" aria-describedby="emailHelp" placeholder="Enter Password">
+
+                    </div>
+
+                    <div id="forgetpas">
+                        <p>Don't have an account? &nbsp</p>
+                        <div>
+                            <a href="signup.html" class="card-link" style="margin-left:0px;color : rgb(149, 149, 149);text-decoration: underline;">Sign up</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark" id="loginbtn" style=" color :dimgrey">Login</button>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAo8sWt2WAEOR-KBNHklv8LpUveY1wszfc",
+            authDomain: "internshipsite-26383.firebaseapp.com",
+            databaseURL: "https://internshipsite-26383.firebaseio.com",
+            projectId: "internshipsite-26383",
+            storageBucket: "internshipsite-26383.appspot.com",
+            messagingSenderId: "457298370787",
+            appId: "1:457298370787:web:9fe5b15d65d422204ea5d6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+
+        // db.settings({
+        //     timestampsInSnapshots: true
+        // });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/auth3.js"></script>
+
+</body>
+
+</html>
